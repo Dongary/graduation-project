@@ -1,0 +1,114 @@
+page {
+  background-color: #f5f5f5;
+  height: 100%;
+  line-height: 1.6;
+}
+
+.mbInput {
+  background: #fff;
+  width: 90%;
+  padding: 0 5%;
+  border-top: 2rpx #ececec solid;
+  border-bottom: 2rpx #ececec solid;
+}
+
+.mbBtn {
+  width: 90%;
+  margin: 40rpx auto 0;
+}
+
+.mbBtn button::after {
+  border: 0;
+}
+
+.mbBtn .vBtn_ok {
+  border: 0;
+  background: #405f80;
+  color: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 100rpx;
+}
+.mbBtn .vBtn_oks {
+  background: #395573;
+}
+.mbTxing {
+  width: 90%;
+  background: #fff5ec;
+  padding: 2% 5%;
+  margin-bottom: 30rpx;
+  border-bottom: 2rpx #ffe2c8 solid;
+  color: #ff8e28;
+  font-size: 10pt;
+}
+
+.mbTxing text {
+  width: 100%;
+  display: block;
+}
+
+.xuanBtn {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.diuBtn {
+  flex: 6;
+  background: #fff5ec;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-radius: 3rpx;
+}
+
+.diuBtns {
+  background: #405f80;
+  color: #fff;
+}
+
+.jianBtn {
+  flex: 6;
+  background: #fff5ec;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-radius: 3px;
+}
+
+.jianBtns {
+  background: #405f80;
+  color: #fff;
+}
+
+.xuanLine {
+  flex: 1;
+  height: 120rpx;
+}
+
+.xuanBtn button::after {
+  border-radius: 0px;
+}
+
+.miaoshu {
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+.locations {
+  background: #fcfcfc;
+  padding: 10rpx 0 10rpx 40rpx;
+  font-size: 30rpx;
+  color: #999;
+  margin-top: 30rpx;
+}
+
+.uploadPic {
+  width: 20%;
+  margin-right: 20rpx;
+}
+
+.uploadPics {
+  width: 20%;
+  height: 130rpx;
+  margin-right: 20rpx;
+}

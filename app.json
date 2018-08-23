@@ -1,0 +1,37 @@
+ {
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/posts/post",
+    "pages/posts/post-detail/post-detail",
+    "pages/publish/publish",
+    "pages/market/market",
+    "pages/market/market-detail/market-detail"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#405f80"
+  },
+  "tabBar": {
+    "selectedColor": "#1e489f",
+    "borderStyle": "white", 
+    "list": [
+      {
+        "pagePath": "pages/posts/post",
+        "text": "失物招领",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布珍宝",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/market/market",
+        "text": "二手Market",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

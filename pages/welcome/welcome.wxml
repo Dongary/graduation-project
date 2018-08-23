@@ -1,0 +1,7 @@
+<view class='container'>
+  <image class='user-avatar' src='{{avatarUrl}}'></image>
+  <text class='user-name'>{{userName}}</text>
+  <view class='moto-container' bindtap='onTap'>
+    <text class='moto'>快戳我快戳我</text>
+  </view>
+</view>

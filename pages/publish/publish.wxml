@@ -1,0 +1,41 @@
+<view class="addMain">
+
+  <view class="mbTxing">
+    <text>【注】此程序为西亚斯学生服务</text>
+    <text>【意】发布时请注意填写清楚地址</text>
+    <text>【啦】请尽量上传清晰图片，并留下个人联系方式</text>
+  </view>
+  <form bindsubmit="formSubmit">
+
+    <view class="xuanBtn">
+      <image class="diuBtn" src='{{diuBtnShow? "/images/publish/diuBTnt.png":"/images/publish/diuBTnf.png"}}' bindtap="lostProperty"></image>
+      <view class="xuanLine"></view>
+      <image class="jianBtn" src='{{jianBtnShow? "/images/publish/jianBTnt.png":"/images/publish/jianBTnf.png"}}' bindtap="heritage"></image>
+    </view>
+
+
+    <view class='location'>
+      <input wx:if="{{diuBtnShow}}" placeholder="填写具体位置" class="locations" maxlength="20" name="location" value='{{location}}'></input>
+      <input wx:if="{{jianBtnShow}}" placeholder="填写主题" class="locations" maxlength="20" name="title" value='{{title}}'></input>
+    </view>
+    <view class="mbInput">
+
+      <view class="miaoshu">
+        <textarea placeholder="对物品的描述" class="section" maxlength="100" name="content" value='{{content}}' />
+        <view bindtap="checkimg">
+          <image wx:for="{{imglist}}" class="uploadPics" mode="aspectFill" src="{{item}}" wx:key=""></image>
+          <image src="/images/publish/selectimg.png" class="uploadPic" mode="widthFix"></image>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="mbBtn">
+      <button class="vBtn_ok" formType="submit" hover-class="vBtn_oks">提交发布</button>
+    </view>
+    <view class="mbBtn">
+      <button class="vBtn_ok" formType="reset" bindtap="reset" hover-class="vBtn_oks">清空内容</button>
+    </view>
+  </form>
+
+</view>

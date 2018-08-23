@@ -1,0 +1,26 @@
+@import "post-item/post-item-template.wxss";
+
+.container {
+  background-color: #f0f0f0;
+}
+swiper {
+  width:100%;
+  height:600rpx
+}
+swiper image {
+  width:750rpx;
+  height:600rpx
+}
+.glide {
+  margin: 10px 10px 10px 10px; 
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #CCCCCC;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+.glide text {
+  font-size: 20rpx;
+  padding-bottom: 10px;
+}
+

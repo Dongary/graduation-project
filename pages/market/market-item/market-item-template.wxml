@@ -1,0 +1,24 @@
+<template name="postItem">
+
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image class='post-author' src='{{avatarUrl}}'></image>
+      <text class='post-date'>{{time}}</text>
+    </view>
+    
+    <view class='location'>
+      <text class='post-locations'>{{title}}</text>
+    </view>
+
+    <image class='post-image' src='/images/misstw.png'></image>
+    <text class='post-content'>{{content}}</text>
+
+    <view class='post-like'>
+      <text class='post-like-font'>{{reading}}</text>
+      <image class='post-like-img' src='/images/icon/view.png'></image>
+      <text class='post-like-font'>{{collection}}</text>
+      <image class='post-like-img' src='/images/icon/chat.png'></image>
+    </view>
+  </view>
+
+</template>

@@ -1,0 +1,44 @@
+<import src="post-item/post-item-template.wxml" />
+
+
+<view class='container'>
+ <swiper catchtap='onSwiperTap' indicator-dots="true" indicator-color="#FFFFFF" indicator-active-color="#DDDDDD" autoplay="true" interval="4000">
+   <swiper-item><image src='/images/misso.png' data-postId="1"></image></swiper-item>
+   <swiper-item><image src='/images/misstw.png' data-postId="2"></image></swiper-item>
+   <swiper-item><image src='/images/missth.png' data-postId="0"></image></swiper-item>
+ </swiper>
+ 
+ <view class='post-container'>
+    <view class='post-author-date'>
+      <image class='post-author' src='/images/avatar.png'></image>
+      <text class='post-date'>2018年4月2日20时22分</text>
+    </view>
+    
+    <view class='location'>
+      <text class='post-location'>位置：</text>
+      <text class='post-locations'>大城堡</text>
+    </view>
+
+    <image class='post-image' src='/images/misso.png'></image>
+    <text class='post-content'>Beats白色耳机一副，有划痕，拉面窗口桌子上</text>
+
+    <view class='post-like'>
+      <text class='post-like-font'>100</text>
+      <image class='post-like-img' src='/images/icon/view.png'></image>
+      <text class='post-like-font'>110</text>
+      <image class='post-like-img' src='/images/icon/chat.png'></image>
+    </view>
+  </view>
+
+ <block wx:for="{{postdata}}" wx:for-item="item">
+
+   <view catchtap="onPostTap" data-postId="{{item.postId}}">
+      <template is="postItem" data="{{...item}}" />     
+   </view>
+  
+ </block>
+
+ <view class='glide' catchtap='glideTap'>
+   <text>下滑加载更多</text>
+ </view>
+</view>
